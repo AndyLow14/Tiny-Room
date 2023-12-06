@@ -46,9 +46,7 @@ const useController = () => {
       max: 1,
       step: 0.01,
     },
-    autoRotate: {
-      value: true,
-    },
+    autoRotate: false,
     color: "#555555",
   });
   return datas;
@@ -124,10 +122,15 @@ const Effects = () => {
 
 const App = () => {
   const datas = useController();
+
   return (
     <div className="w-screen h-screen">
       <Canvas
-        camera={{ position: [0, 8, 15] }}
+        orthographic
+        camera={{
+          position: [20, 20, 20],
+          zoom: 48,
+        }}
         dpr={window.devicePixelRatio}
         onCreated={({ gl }) => {
           gl.setClearColor(new THREE.Color("#000000"));
