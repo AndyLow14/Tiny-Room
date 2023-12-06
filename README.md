@@ -1,8 +1,7 @@
-# React + Vite
+# TinyRoom
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+React Three Fiber, Godrays Concept
 
-Currently, two official plugins are available:
+Presentation of Isometric Voxel Rooms
+![image](https://github.com/AndyLow14/tiny-room/assets/80891206/85c7be76-4b42-41d0-a989-43eba6bfe334)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
