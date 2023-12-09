@@ -13,6 +13,7 @@
     "@react-three/drei": "^9.90.0",
     "@react-three/fiber": "^8.15.12",
     "@react-three/postprocessing": "^2.15.11",
+    "@tabler/icons-react": "^2.43.0",
     "autoprefixer": "^10.4.16",
     "leva": "^0.9.35",
     "postcss": "^8.4.32",

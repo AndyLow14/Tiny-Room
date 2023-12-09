@@ -5,13 +5,14 @@ import { Canvas, useThree } from "@react-three/fiber";
 import { EffectComposer, GodRays } from "@react-three/postprocessing";
 import { OrbitControls } from "@react-three/drei";
 import { ApolloModel } from "../Models";
+import { BackButton } from "../Components";
 
 const Apollo = () => {
   const useController = () => {
     const datas = useControls("godray", {
       enabled: true,
       samples: {
-        value: 128,
+        value: 140,
         min: 10,
         max: 200,
         step: 10,
@@ -35,13 +36,13 @@ const Apollo = () => {
         step: 0.01,
       },
       exposure: {
-        value: 1,
+        value: 0.5,
         min: 0,
         max: 1,
         step: 0.01,
       },
       blur: {
-        value: 0.01,
+        value: 0.0,
         min: 0,
         max: 1,
         step: 0.01,
@@ -62,13 +63,9 @@ const Apollo = () => {
       scene.userData.refs.lightMesh = meshRef;
     }, [scene.userData]);
 
-    useEffect(() => {
-      meshRef.current.lookAt(0, 0, 0);
-    }, []);
-
     return (
-      <mesh ref={meshRef} position={[-0.8, -1.2, -5]}>
-        <planeGeometry args={[1.9, 3.4]} />
+      <mesh ref={meshRef} position={[-0.8, -1.2, -4.5]}>
+        <planeGeometry args={[1.9, 3.3]} />
         <meshBasicMaterial color={datas.color} side={THREE.DoubleSide} />
         <pointLight color={datas.color} intensity={1000} />
       </mesh>
@@ -103,6 +100,7 @@ const Apollo = () => {
 
   return (
     <div className="w-screen h-screen">
+      <BackButton />
       <Canvas
         orthographic
         camera={{
@@ -115,7 +113,7 @@ const Apollo = () => {
         }}
         shadows
       >
-        <OrbitControls autoRotate={datas.autoRotate} />
+        <OrbitControls autoRotate={datas.autoRotate} autoRotateSpeed={0.5} />
         <pointLight position={[20, 20, 20]} intensity={200} />
         <Suspense fallback={null}>
           <ApolloModel position={[0, -3, 0]} />
