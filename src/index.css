@@ -40,22 +40,34 @@ h1 {
 }
 
 button {
-  border-radius: 8px;
-  border: 1px solid transparent;
-  padding: 0.6em 1.2em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 4px;
+  border: 3px solid black;
+  padding: 0.4rem 0.8rem;
   font-size: 1em;
-  font-weight: 500;
+  font-weight: 700;
   font-family: inherit;
-  background-color: #1a1a1a;
+  background-color: white;
   cursor: pointer;
-  transition: border-color 0.25s;
+  box-shadow: 4px 4px black;
+  text-transform: uppercase;
+  user-select: none;
 }
 button:hover {
-  border-color: #646cff;
+  transition: all 0.2s ease;
+  background-color: black;
+  color: white;
 }
-button:focus,
-button:focus-visible {
-  outline: 4px auto -webkit-focus-ring-color;
+button:active {
+  transition: all 0.1s ease;
+  transform: translateX(4px) translateY(4px);
+  box-shadow: none;
+}
+button:disabled {
+  background-color: silver;
+  pointer-events: none;
 }
 
 @media (prefers-color-scheme: dark) {
