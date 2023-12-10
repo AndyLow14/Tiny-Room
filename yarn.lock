@@ -754,6 +754,11 @@
     postprocessing "^6.32.1"
     three-stdlib "^2.23.4"
 
+"@remix-run/router@1.13.1":
+  version "1.13.1"
+  resolved "https://registry.yarnpkg.com/@remix-run/router/-/router-1.13.1.tgz#07e2a8006f23a3bc898b3f317e0a58cc8076b86e"
+  integrity sha512-so+DHzZKsoOcoXrILB4rqDkMDy7NLMErRdOxvzvOKb507YINKUP4Di+shbTZDhSE/pBZ+vr7XGIpcOO0VLSA+Q==
+
 "@rollup/rollup-android-arm-eabi@4.6.1":
   version "4.6.1"
   resolved "https://registry.yarnpkg.com/@rollup/rollup-android-arm-eabi/-/rollup-android-arm-eabi-4.6.1.tgz#0ea289f68ff248b50fea5716ca9f65f7d4dba3ae"
@@ -818,6 +823,19 @@
   version "1.2.8"
   resolved "https://registry.yarnpkg.com/@stitches/react/-/react-1.2.8.tgz#954f8008be8d9c65c4e58efa0937f32388ce3a38"
   integrity sha512-9g9dWI4gsSVe8bNLlb+lMkBYsnIKCZTmvqvDG+Avnn69XfmHZKiaMrx7cgTaddq7aTPPmXiTsbFcUy0xgI4+wA==
+
+"@tabler/icons-react@^2.43.0":
+  version "2.43.0"
+  resolved "https://registry.yarnpkg.com/@tabler/icons-react/-/icons-react-2.43.0.tgz#b811df9dc2719a73f59b5a0664cf0a27476a023f"
+  integrity sha512-D0ZqgD8pbbe8vENLunoIWH4zmdcG4N/B5Xsx2Nta2oVsoftva9uL+9Ci/J9pHsZzkl+jXFdo3xAlGAuWfaTK0w==
+  dependencies:
+    "@tabler/icons" "2.43.0"
+    prop-types "^15.7.2"
+
+"@tabler/icons@2.43.0":
+  version "2.43.0"
+  resolved "https://registry.yarnpkg.com/@tabler/icons/-/icons-2.43.0.tgz#f720db2b2fb93a85d6d153f65fe120c092e51aba"
+  integrity sha512-afToJMJj31Q9Put1/saemluLBvWhgzsF59QM/mJZZ7LLHW12ViumyQIwA31SRCH/HsYBEoRp2qHFt0QwIFWDFw==
 
 "@types/babel__core@^7.20.5":
   version "7.20.5"
@@ -2625,7 +2643,7 @@ prelude-ls@^1.2.1:
   resolved "https://registry.yarnpkg.com/prelude-ls/-/prelude-ls-1.2.1.tgz#debc6489d7a6e6b0e7611888cec880337d316396"
   integrity sha512-vkcDPrRZo1QZLbn5RLGPpg/WmIQ65qoWWhcGKf/b5eplkkarX0m9z8ppCat4mlOqUsWpyNuYgO3VRyrYHSzX5g==
 
-prop-types@^15.6.0, prop-types@^15.8.1:
+prop-types@^15.6.0, prop-types@^15.7.2, prop-types@^15.8.1:
   version "15.8.1"
   resolved "https://registry.yarnpkg.com/prop-types/-/prop-types-15.8.1.tgz#67d87bf1a694f48435cf332c24af10214a3140b5"
   integrity sha512-oj87CgZICdulUohogVAR7AjlC0327U4el4L6eAvOqCeudMDVU0NThNaV+b9Df4dXgSP1gXMTnPdhfe/2qDH5cg==
@@ -2695,6 +2713,21 @@ react-refresh@^0.14.0:
   version "0.14.0"
   resolved "https://registry.yarnpkg.com/react-refresh/-/react-refresh-0.14.0.tgz#4e02825378a5f227079554d4284889354e5f553e"
   integrity sha512-wViHqhAd8OHeLS/IRMJjTSDHF3U9eWi62F/MledQGPdJGDhodXJ9PBLNGr6WWL7qlH12Mt3TyTpbS+hGXMjCzQ==
+
+react-router-dom@^6.20.1:
+  version "6.20.1"
+  resolved "https://registry.yarnpkg.com/react-router-dom/-/react-router-dom-6.20.1.tgz#e34f8075b9304221420de3609e072bb349824984"
+  integrity sha512-npzfPWcxfQN35psS7rJgi/EW0Gx6EsNjfdJSAk73U/HqMEJZ2k/8puxfwHFgDQhBGmS3+sjnGbMdMSV45axPQw==
+  dependencies:
+    "@remix-run/router" "1.13.1"
+    react-router "6.20.1"
+
+react-router@6.20.1:
+  version "6.20.1"
+  resolved "https://registry.yarnpkg.com/react-router/-/react-router-6.20.1.tgz#e8cc326031d235aaeec405bb234af77cf0fe75ef"
+  integrity sha512-ccvLrB4QeT5DlaxSFFYi/KR8UMQ4fcD8zBcR71Zp1kaYTC5oJKYAp1cbavzGrogwxca+ubjkd7XjFZKBW8CxPA==
+  dependencies:
+    "@remix-run/router" "1.13.1"
 
 react-use-measure@^2.1.1:
   version "2.1.1"
