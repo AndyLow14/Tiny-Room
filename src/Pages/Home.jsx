@@ -12,7 +12,12 @@ const Home = () => {
           alt="Apollo Design Preview"
         />
         <SceneCard title="Athena" />
-        <SceneCard title="Aphrodite" />
+        <SceneCard
+          title="Aphrodite"
+          route="/aphrodite"
+          img="/apollo-preview.png"
+          alt="Aphrodite Design Preview"
+        />
       </div>
     </div>
   );

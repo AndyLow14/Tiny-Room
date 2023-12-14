@@ -1,5 +1,5 @@
 import React from "react";
-import { Home, Apollo } from "./Pages";
+import { Home, Apollo, Aphrodite } from "./Pages";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 const App = () => {
@@ -8,6 +8,7 @@ const App = () => {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/apollo" element={<Apollo />} />
+        <Route path="/aphrodite" element={<Aphrodite />} />
       </Routes>
     </BrowserRouter>
   );
