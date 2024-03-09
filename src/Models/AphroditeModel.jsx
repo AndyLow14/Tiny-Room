@@ -6,7 +6,7 @@ import React from "react";
 import { useGLTF } from "@react-three/drei";
 
 const AphroditeModel = (props) => {
-  const { nodes, materials } = useGLTF("/computer-room-no-glass.gltf");
+  const { nodes, materials } = useGLTF("/Aphrodite-Model.gltf");
   return (
     <group {...props} dispose={null}>
       <mesh
@@ -20,4 +20,4 @@ const AphroditeModel = (props) => {
 };
 
 export default AphroditeModel;
-useGLTF.preload("/computer-room-no-glass.gltf");
+useGLTF.preload("/Aphrodite-Model.gltf");

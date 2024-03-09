@@ -48,7 +48,7 @@ const Aphrodite = () => {
         step: 0.01,
       },
       autoRotate: false,
-      color: "#555555",
+      color: "#6b466c",
     });
     return datas;
   };
@@ -67,15 +67,15 @@ const Aphrodite = () => {
 
     return (
       <>
-        <mesh ref={meshRef} position={[-0.8, -1.2, -4.5]}>
-          <planeGeometry args={[1.9, 3.3]} />
+        <mesh ref={meshRef} position={[-0.1, -1.1, -5.19]}>
+          <planeGeometry args={[2.6, 1.4]} />
           <meshBasicMaterial color={datas.color} side={THREE.DoubleSide} />
-          <pointLight color={datas.color} intensity={1000} />
+          <pointLight color={datas.color} intensity={500} />
         </mesh>
-        <mesh ref={meshRef2} position={[-0.8, -1.2, 0]}>
-          <planeGeometry args={[1.9, 3.3]} />
+        <mesh ref={meshRef2} position={[-3.0, -1.1, -5.19]}>
+          <planeGeometry args={[2.6, 1.4]} />
           <meshBasicMaterial color={datas.color} side={THREE.DoubleSide} />
-          <pointLight color={datas.color} intensity={1000} />
+          <pointLight color={datas.color} intensity={500} />
         </mesh>
       </>
     );
