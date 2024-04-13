@@ -1,27 +1,23 @@
 import { IconChevronsRight } from "@tabler/icons-react";
 import React from "react";
 
-const SceneCard = ({ title, route, img, alt }) => {
+const SceneCard = ({ title, desc, route, img, alt }) => {
   const handleRedirect = (path) => {
     window.location.href = path;
   };
 
   return (
-    <div class="max-w-sm bg-white border-black border-4 shadow-[10px_10px_0px_0px_rgba(0,0,0)]">
+    <div className="flex flex-col h-full max-w-sm bg-white border-black border-4 shadow-[10px_10px_0px_0px_rgba(0,0,0)]">
       <img
-        class="border-white object-cover"
+        className="border-white object-cover"
         src={img || "/coming-soon.png"}
         alt={alt || "Coming Soon"}
       />
-      <div class="p-5">
-        <h5 class="mb-2 text-2xl font-bold tracking-tight">{title}</h5>
-        <p class="mb-4 font-normal">
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis
-          praesentium incidunt ducimus corporis maiores debitis ratione quas
-          voluptas perspiciatis dolorum?
-        </p>
+      <div className="p-6 flex flex-col justify-between h-full">
+        <h5 className="mb-2 text-2xl font-bold tracking-tight">{title}</h5>
+        <p className="mb-4 font-normal">{desc}</p>
         <button
-          className="px-3 py-2"
+          className="px-3 py-2 w-2/5"
           onClick={() => handleRedirect(route)}
           disabled={!route}
         >
